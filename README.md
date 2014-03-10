@@ -1,8 +1,6 @@
 droidutility
 ============
-
 A simple library project that you can use in your android projects for various application level utilities like logging, toast display and many more application services etc.
-
 
 Important about Usage:
 
@@ -14,3 +12,8 @@ and set this class as with full qualification the value for name attribute of ap
         android:name="com.yourpackagename.activities.MyApplication"   // This attribute
         android:allowBackup="true"
         ...... >
+        
+Now this will enable the main app to use the system services implementation defined in the library app.
+        
+        
+        
