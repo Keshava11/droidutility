@@ -33,7 +33,7 @@ public class DroidLocationServer {
 				Context.LOCATION_SERVICE);
 
 		mLocationMgr.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, mLocationListener);
-		DroidUtil.LogI(TAG, "Location Server initialieses");
+		DroidUtil.LogI(TAG, "Location Server initializes.");
 	}
 
 	private LocationListener mLocationListener = new LocationListener()
