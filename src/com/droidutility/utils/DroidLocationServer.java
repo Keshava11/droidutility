@@ -8,6 +8,11 @@ import android.os.Bundle;
 
 import com.droidutility.logapplication.DroidApplication;
 
+/**
+ * Utility class to use location service in the app
+ * @author Rockyy
+ *
+ */
 public class DroidLocationServer {
 	
 	private static final String TAG = DroidLocationServer.class.getSimpleName();
@@ -59,7 +64,6 @@ public class DroidLocationServer {
 		@Override
 		public void onLocationChanged(Location location)
 		{
-			DroidUtil.LogV(TAG, "onLocationChanged :: " + location);
 			DroidUtil.showToast("Location changed :: "+location);
 			mLastLocation = location;
 			stopListener();
