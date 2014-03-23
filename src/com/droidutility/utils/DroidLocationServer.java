@@ -20,6 +20,9 @@ public class DroidLocationServer {
 	private LocationManager mLocationMgr = null;
 	private Location mLastLocation = null;
 	
+	private static final int MIN_TIME= 0;
+	private static final int MIN_DISTANCE = 0;
+	
 	private DroidLocationServer()
 	{
 
@@ -37,7 +40,7 @@ public class DroidLocationServer {
 		mLocationMgr = (LocationManager) DroidApplication.getsContext().getSystemService(
 				Context.LOCATION_SERVICE);
 
-		mLocationMgr.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, mLocationListener);
+		mLocationMgr.requestLocationUpdates(LocationManager.GPS_PROVIDER, MIN_TIME, MIN_DISTANCE, mLocationListener);
 		DroidUtil.LogI(TAG, "Location Server initializes.");
 	}
 
