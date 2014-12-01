@@ -1,6 +1,7 @@
 
 package com.droidutility.logapplication;
 
+import com.droidutility.utils.DroidUtil;
 import android.app.Application;
 import android.content.Context;
 
@@ -31,6 +32,16 @@ public class DroidApplication extends Application
 	public void onCreate()
 	{
 		super.onCreate();
-		sContext= this;
+		sContext = this;
+	}
+
+	/**
+	 * This method is to be overridden by subclasses to provide implementation specific to reboot of device.
+	 * 
+	 * @param iParams boolean representing last shutdown state
+	 */
+	public void postShutDown(Object iParams)
+	{
+		// TODO Override this method
 	}
 }
