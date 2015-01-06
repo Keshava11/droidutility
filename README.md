@@ -41,7 +41,7 @@
             }
         ```
     
-     and then under ``` <application> ``` tag, add the following entry for receiver
+     and then under  **application** tag, add the following entry for receiver
 
     ```sh
      <!-- Receiver to checks for broadcast for ACTIONs : ACTION_SHUTDOWN and ACTION_BOOT_COMPLETED -->
