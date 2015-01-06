@@ -28,7 +28,7 @@
 - Disconnect Utils includes the code in the package **com.droidutility.disconnect.utils** . This is a utility implementation that provides information about the last shutdown that whether it was **Normal** or **Abrupt(ShutDown due to Battery Detachment)**.
 - To get it usable in your application code you will need to add a class and some changes in your **application's manifest** file.
     
-    - You will first need to create a Receiver class that extends
+     You will first need to create a Receiver class that extends
     
     ```sh
             public class MyDisconnectReceiver extends DisconnectReceiver {
@@ -41,7 +41,7 @@
             }
         ```
     
-    - and then under ``` <application> ``` tag, add the following entry for receiver
+     and then under ``` <application> ``` tag, add the following entry for receiver
 
     ```sh
      <!-- Receiver to checks for broadcast for ACTIONs : ACTION_SHUTDOWN and ACTION_BOOT_COMPLETED -->
